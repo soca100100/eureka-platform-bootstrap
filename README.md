@@ -134,7 +134,7 @@ sh ./set-local-credentials.sh
 > In addition, once credentials is set and core profile is running - changing them will break deployment, and the
 > workaround is to manually update them in `.env.local.crendentials` and in corresponding container or to start
 > deployment from scratch by removing docker volumes (before executing a script - deployment must be stopped with
-> ```./stop-docker-containers.sh```):
+> ```./stop-containers.sh```):
 > ```shell
 > docker volume rm -f folio-platform-minimal_db folio-platform-minimal_kafka-data folio-platform-minimal_vault-data
 > ```
